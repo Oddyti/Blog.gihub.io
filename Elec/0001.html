@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Oddyti">
   <meta name="keywords" content="keywords">
-  <title>位运算 - 分享一份独自</title>
+  <title>二极管 - 分享一份独自</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -177,8 +177,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-09-10 08:05" pubdate>
-        2020年9月10日 早上
+      <time datetime="2020-12-23 14:01" pubdate>
+        2020年12月23日 下午
       </time>
     </span>
   
@@ -189,7 +189,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      538 字
+      388 字
     </span>
   
 
@@ -199,7 +199,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      4
        分钟
     </span>
   
@@ -229,68 +229,49 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">位运算</h1>
+            <h1 style="display: none">二极管</h1>
             
             <div class="markdown-body" id="post-body">
-              <h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><h1 id="按位与-amp"><a href="#按位与-amp" class="headerlink" title="按位与 &amp;"></a>按位与 &amp;</h1><ul>
-<li>若 (x)1 == 1 且 (y)1 == 1，那么(x &amp; y)1 = 1，否则(x &amp; y)1 = 0</li>
-<li>应用<ul>
-<li>让某些位为0: x &amp; 0xFE</li>
-<li>取一个数中的某一段: x &amp; 0xFF</li>
+              <h1 id="二极管"><a href="#二极管" class="headerlink" title="二极管"></a>二极管</h1><h2 id="PN结"><a href="#PN结" class="headerlink" title="PN结"></a>PN结</h2><h3 id="一、PN结的形成"><a href="#一、PN结的形成" class="headerlink" title="一、PN结的形成"></a>一、PN结的形成</h3><ol>
+<li>扩散运动（多子）</li>
+<li>空间电荷区：耗尽层、阻挡层、PN结</li>
+<li>漂移运动（少子）</li>
+<li>空间电荷区：阻碍多子扩散、加快少子扩散<h3 id="二、PN结的特性：单向导电性"><a href="#二、PN结的特性：单向导电性" class="headerlink" title="二、PN结的特性：单向导电性"></a>二、PN结的特性：单向导电性</h3></li>
+</ol>
+<ul>
+<li>外加正向电压等于增强扩散运动</li>
+<li>外加反向电压截止，增大耗尽层（并不是没有电流，此时加强了少子运动（漂移运动），有mA级别的反向饱和电流，对温度很敏感）</li>
+<li>二极管做正向导通时候一定要加限流电阻，防止耗尽层烧掉<h3 id="三、PN结的电流方程"><a href="#三、PN结的电流方程" class="headerlink" title="三、PN结的电流方程"></a>三、PN结的电流方程</h3>$i = I_s(e^{\frac{V}{V_T}}-1)$</li>
+</ul>
+<p>$V_T = 25mV$</p>
+<h3 id="四、PN结的伏安特性"><a href="#四、PN结的伏安特性" class="headerlink" title="四、PN结的伏安特性"></a>四、PN结的伏安特性</h3><p>$i = I_s(e^{\frac{V}{V_T}}-1)$</p>
+<ul>
+<li>正向指数关系</li>
+<li>反向饱和电流：$I_s$</li>
+<li>反向击穿<ul>
+<li>雪崩击穿</li>
+<li>齐纳击穿</li>
 </ul>
 </li>
 </ul>
-<h1 id="按位或"><a href="#按位或" class="headerlink" title="按位或 |"></a>按位或 |</h1><ul>
-<li>若 (x)1 == 1 或 (y)1 == 1，那么(x | y)1 = 1，否则(x &amp; y)1 = 0</li>
-<li>应用<ul>
-<li>使得一位或几个位为1: x | 0x01 (最后一位或成1)</li>
-<li>把两个数拼起来: 0x00FF | 0xFF00 (拼成FFFF)</li>
+<h2 id="二极管的主要参数"><a href="#二极管的主要参数" class="headerlink" title="二极管的主要参数"></a>二极管的主要参数</h2><ul>
+<li>$I_F$ 最大整流电流</li>
+<li>$V_R$ 最大反向工作电压，一般是反向击穿电压的一半（余度，保证补击穿）</li>
+<li>$I_R$ 未击穿时候，反向电流</li>
+<li>$f_M$ 最高工作频率，因为PN结有电容效应，频率高时，PN近似导通的容抗，单向导电性被破坏。高频电路要注意。</li>
 </ul>
-</li>
+<h2 id="二极管的等效电路"><a href="#二极管的等效电路" class="headerlink" title="二极管的等效电路"></a>二极管的等效电路</h2><ul>
+<li>伏安特性折线化</li>
+<li><img src="../img/erjiguandengxiao.png" srcset="/img/loading.gif" alt="alt 二极管等效模型"></li>
+<li>(a)是绝对理想的二极管，舍弃掉了导通电压</li>
+<li>(b)导通电压导通后近似不变</li>
+<li>(c)</li>
+<li><img src="../img/%E9%99%90%E5%B9%85%E7%94%B5%E8%B7%AF.png" srcset="/img/loading.gif" alt="alt 限幅电路"></li>
+<li><img src="../img/%E5%B0%8F%E4%BF%A1%E5%8F%B7.png" srcset="/img/loading.gif" alt="alt 小信号"></li>
+<li>小信号加直流时，直流让二极管导通，从而小信号可以通过，即让小信号在特定的点工作</li>
+<li></li>
 </ul>
-<h1 id="按位取反"><a href="#按位取反" class="headerlink" title="按位取反 ~"></a>按位取反 ~</h1><ul>
-<li>(~x)i = 1 - (x)i</li>
-<li>把1位变0，0位变1</li>
-<li>想得到全部位为1的数: ~0</li>
-<li>例子<ul>
-<li>7 二进制 0111，x |7 使得低三位为1，而x &amp; ~7，就使得低三位为0</li>
-</ul>
-</li>
-</ul>
-<h1 id="逻辑运算与按位运算"><a href="#逻辑运算与按位运算" class="headerlink" title="逻辑运算与按位运算"></a>逻辑运算与按位运算</h1><ul>
-<li>对于逻辑运算，它只看到两个值：0和1，可以认为逻辑运算相当于把所有的非0值变成1，然后做按位运算</li>
-<li>如<ul>
-<li>5 &amp;&amp; 4 → 1 &amp; 1 → 1</li>
-<li>5 || 4 → 1 | 1 → 1</li>
-<li>!4 → !1 → 0</li>
-</ul>
-</li>
-</ul>
-<h1 id="按位异或"><a href="#按位异或" class="headerlink" title="按位异或 ^"></a>按位异或 ^</h1><ul>
-<li>如果(x)i == (y)i，那么(x ^ y) = 0，否则，(x^y)i == 1</li>
-<li>即两个位相等，结果为0，两个位不相等，结果为1</li>
-<li>如果x和y相等，那么(x ^ y)结果为0</li>
-<li>对于一个变量用一个值异或两次等于啥也没做 （可以用来加密）<ul>
-<li>x ^ y ^ y → x</li>
-</ul>
-</li>
-<li>相等的两个数异或结果为0</li>
-</ul>
-<h2 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h2><h1 id="左移-lt-lt"><a href="#左移-lt-lt" class="headerlink" title="左移 &lt;&lt;"></a>左移 &lt;&lt;</h1><ul>
-<li>i &lt;&lt; j 表示i中所有的位向左移动j个位置，右边填入0</li>
-<li>所有小于int的类型，移位以int的方式来做，结果是int</li>
-<li>x &lt;&lt; 1 (左移一位) 等价于 x *= 2</li>
-<li>x &lt;&lt; n (左移n位) 等价于 x *= 2^n(n次方)</li>
-</ul>
-<h1 id="右移"><a href="#右移" class="headerlink" title="右移"></a>右移</h1><ul>
-<li>i &gt;&gt; j 表示i中所有的位向右移j位</li>
-<li>所有小于int的类型，移位以int的方式来做，结果是int</li>
-<li>对于unsigned的类型，左边填入0</li>
-<li>对于signed的类型，左边填入原来的最高位（保持符号不变）</li>
-<li>x &gt;&gt; 1 (左移一位) 等价于 x /= 2</li>
-<li>x &gt;&gt; n (左移n位) 等价于 x /= 2^n(n次方)</li>
-</ul>
-<h1 id="！！移位的位数不要用负数，这是没有定义的行为！！"><a href="#！！移位的位数不要用负数，这是没有定义的行为！！" class="headerlink" title="！！移位的位数不要用负数，这是没有定义的行为！！"></a>！！移位的位数不要用负数，这是没有定义的行为！！</h1><h2 id="位运算例子"><a href="#位运算例子" class="headerlink" title="位运算例子"></a>位运算例子</h2>
+
             </div>
             <hr>
             <div>
@@ -300,7 +281,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a>
+                      <a class="hover-with-bg" href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/">电子电路基础</a>
                     
                   </div>
                 
@@ -313,18 +294,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/Elec/0001.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">二极管</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/05/hello-world/">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/C/0001.html">
+                        <span class="hidden-mobile">位运算</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -343,8 +318,8 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://oddyti.cn/C/0001.html';
-        this.page.identifier = '/C/0001.html';
+        this.page.url = 'http://oddyti.cn/Elec/0001.html';
+        this.page.identifier = '/Elec/0001.html';
       };
       function loadDisqus() {
         (function () {
@@ -520,7 +495,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "位运算&nbsp;",
+        "二极管&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
