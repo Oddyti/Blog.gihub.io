@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+<html lang="zh-CN" data-default-color-scheme=&quot;auto&quot;>
 
 
 
@@ -266,8 +266,8 @@
 <li>(a)是绝对理想的二极管，舍弃掉了导通电压</li>
 <li>(b)导通电压导通后近似不变</li>
 <li>(c)</li>
-<li><img src="../img/%E9%99%90%E5%B9%85%E7%94%B5%E8%B7%AF.png" srcset="/img/loading.gif" alt="alt 限幅电路"></li>
-<li><img src="../img/%E5%B0%8F%E4%BF%A1%E5%8F%B7.png" srcset="/img/loading.gif" alt="alt 小信号"></li>
+<li><img src="../img/限幅电路.png" srcset="/img/loading.gif" alt="alt 限幅电路"></li>
+<li><img src="../img/小信号.png" srcset="/img/loading.gif" alt="alt 小信号"></li>
 <li>小信号加直流时，直流让二极管导通，从而小信号可以通过，即让小信号在特定的点工作</li>
 <li></li>
 </ul>
@@ -585,5 +585,20 @@
 
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
