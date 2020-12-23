@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1608718398766">
+  <link rel="stylesheet" href="/css/style.css?v=1608737322665">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -151,8 +151,8 @@
 
         <div class="nexmoe-post-meta nexmoe-rainbow">
             <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
-            <a><i class="nexmoefont icon-areachart"></i>171 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+            <a><i class="nexmoefont icon-areachart"></i>448 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
         </div>
 
         <article>
@@ -163,12 +163,30 @@
 <p>基极base: </p>
 <p>==三个区域、三个电极、两个结==</p>
 <h2 id="电流放大作用"><a href="#电流放大作用" class="headerlink" title="电流放大作用"></a>电流放大作用</h2><h3 id="放大基本原理"><a href="#放大基本原理" class="headerlink" title="放大基本原理"></a>放大基本原理</h3><script type="math/tex; mode=display">i_C=\beta i_B</script><p>放大基本要求：不失真</p>
-<h3 id="放大条件"><a href="#放大条件" class="headerlink" title="放大条件"></a>放大条件</h3><p><img data-fancybox="gallery" data-sizes="auto" data-src="E:\Blog\folder\source\_posts\image-20201223175108127.png" alt="image-20201223175108127" class="lazyload"></p>
+<h3 id="放大条件"><a href="#放大条件" class="headerlink" title="放大条件"></a>放大条件</h3><p><img data-fancybox="gallery" data-sizes="auto" data-src="../img/image-20201223175108127.png" alt="image-20201223175108127" class="lazyload"></p>
 <p>$R_b$限流电阻，由PN结的伏安曲线，防止电流冲出天际</p>
 <p>$V_{BB}$和$V_{CC}$的极性如图，且保证$V_{CC}&gt;V_{BB}$，才使得满足如下条件</p>
 <p>==条件：发射结正向偏置，集电结反偏==</p>
 <p>$I_C$这个放大电流由$V_{CC}$产生，这样的条件下</p>
-<script type="math/tex; mode=display">i_C=\beta i_B</script><h3 id="内部载流子的运动"><a href="#内部载流子的运动" class="headerlink" title="内部载流子的运动"></a>内部载流子的运动</h3>
+<script type="math/tex; mode=display">i_C=\beta i_B</script><h3 id="内部载流子的运动"><a href="#内部载流子的运动" class="headerlink" title="内部载流子的运动"></a>内部载流子的运动</h3><p><img data-fancybox="gallery" data-sizes="auto" data-src="../img\002.png" alt="002" class="lazyload"></p>
+<h4 id="发射区正偏"><a href="#发射区正偏" class="headerlink" title="发射区正偏"></a>发射区正偏</h4><p>发射区是高参杂浓度，所以发射区的自由电子（N）向基区扩散，基区的空穴向发射区扩散。形成两个电流：</p>
+<p>$I_{EN}$、$I_{EP}$ 由于发射区参杂浓度远大于基区，所以$I_{EP} &lt;&lt; I_{EN}$</p>
+<h4 id="基区"><a href="#基区" class="headerlink" title="基区"></a>基区</h4><p>基区薄且参杂浓度低，从发射极而来的这一批自由电子只有小部分在基区和空穴复合，同时VBB会补充，继续和下一批的同样数目的自由电子复合，这样以来$I_{EN}$分成的$I_{BN}$和$I_{CN}$成固定的比例。</p>
+<h4 id="集电区"><a href="#集电区" class="headerlink" title="集电区"></a>集电区</h4><p>基电结反偏，所以收集自由电子。同时自己会加强自己的漂移运动，产生$I_{CBO}$电流，很小。</p>
+<h3 id="放大系数"><a href="#放大系数" class="headerlink" title="放大系数"></a>放大系数</h3><ol>
+<li><p>$\overline{\beta} = \frac{I_{CN}}{I_{BN}} = \frac{I_C - I_{CBO}}{I_B + I_{CBO}} \approx \frac{I_C}{I_B}$</p>
+</li>
+<li><p>$\beta = \frac{\Delta I_C}{\Delta I_B}$</p>
+</li>
+<li><p>当$I_B = 0$时候，依然有$I_C$此时$I_C$称为$I_{CEO}$，穿透电流</p>
+</li>
+<li><p>$I_{CBO}$</p>
+</li>
+<li><p>共基时，$\overline{\alpha} = \frac{I_C}{I_E} = \frac{\overline{\beta}}{1+\overline{\beta}}$</p>
+<p>==共用哪个极，就是另外两个极的电流之比==</p>
+</li>
+</ol>
+
             
         </article>
     </div>
@@ -269,7 +287,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1608718398769"></script>
+ <script src="/js/app.js?v=1608737322668"></script>
 
   
 
