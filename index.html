@@ -1,496 +1,323 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=&quot;auto&quot;>
 
-
+<html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" type="image/png" href="/img/favicon.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
-  <meta name="author" content="Oddyti">
-  <meta name="keywords" content="keywords">
   <title>分享一份肚子</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+  <meta property="og:type" content="website">
+<meta property="og:title" content="分享一份肚子">
+<meta property="og:url" content="http://oddyti.cn/index.html">
+<meta property="og:site_name" content="分享一份肚子">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Oddyti">
+<meta property="article:tag" content="keywords">
+<meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  
+  <!--<link rel="stylesheet" href="/css/style.css?v=1608707581121">-->
 
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_pf9vaxs7x7b.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  
 <meta name="generator" content="Hexo 5.1.1"></head>
 
-
-<body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>分享一份肚子</strong>&nbsp;</a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;</a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" href="javascript:">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
-        
-      </ul>
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(/img/back1.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Oddyti" class="mdui-btn mdui-btn-icon"><img src="/img/logo.png" alt="Oddyti"></a>
+       </div>
     </div>
   </div>
-</nav>
-
-    <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/back1.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.1)">
-          <div class="container page-header text-center fade-in-up">
-            <span class="h2" id="subtitle">
-              
-            </span>
-
-            
-          </div>
-
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Oddyti">
+            <img src="/img/logo.png" alt="Oddyti" alt="Oddyti">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>3</div>
+        <div><span>标签</span>2</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
             </div>
-          
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        <a href="/Elec/0001.html">二极管</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/Elec/0001.html">
-          
-          
-            
-          
-          二极管PN结一、PN结的形成
-扩散运动（多子）
-空间电荷区：耗尽层、阻挡层、PN结
-漂移运动（少子）
-空间电荷区：阻碍多子扩散、加快少子扩散二、PN结的特性：单向导电性
-
-
-外加正向电压等于增强扩散运动
-外加反向电压截止，增大耗尽层（并不是没有电流，此时加强了少子运动（漂移运动），有mA级别的反向饱和电流，对温度很敏感）
-二极管做正向导通时候一定要加限流电阻，防止耗尽层烧掉三、PN结的电流方程$i
         </a>
-      </p>
-
-      <div class="index-btm post-metas">
         
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-23 14:01" pubdate>
-              2020-12-23
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/">电子电路基础</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        <a href="/C/0001.html">位运算</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/C/0001.html">
-          
-          
-            
-          
-          位运算按位与 &amp;
-若 (x)1 == 1 且 (y)1 == 1，那么(x &amp; y)1 = 1，否则(x &amp; y)1 = 0
-应用
-让某些位为0: x &amp; 0xFE
-取一个数中的某一段: x &amp; 0xFF
-
-
-
-按位或 |
-若 (x)1 == 1 或 (y)1 == 1，那么(x | y)1 = 1，否则(x &amp; y)1 = 0
-应用
-使得一位或几个
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-09-10 08:05" pubdate>
-              2020-09-10
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        <a href="/2020/09/05/hello-world/">Hello World</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/09/05/hello-world/">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-09-05 22:25" pubdate>
-              2020-09-05
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
             </div>
-          </div>
-        </div>
-      </div>
-    
-  </main>
-
-  
-    <a id="scroll-top-button" href="#" role="button">
-      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-    </a>
-  
-
-  
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/friends.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
     </div>
-  </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
 </div>
   
-
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://github.com/Oddyti/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
   
-    <!-- APlayer 音乐播放器 -->
-    <div id="aplayer"></div>
-    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
-<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
-<script type="text/javascript">
-  var oldLoadAp = window.onload;
-  window.onload = function () {
-    oldLoadAp && oldLoadAp();
-
-    new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      autoplay: 'false' === 'true',
-      loop: 'all',
-      order: 'random',
-      theme: '#b7daff',
-      preload: 'none',
-      audio: [{"name":"name","artist":"artist","url":"/songs/test.mp3","cover":"/img/cover.jpg"},{"name":"name","artist":"artist","url":"https://...url.mp3","cover":"https://...cover.jpg"}]
-    });
-  }
-</script>
-
   
 
   
-
-  <footer class="mt-5">
-  <div class="text-center py-3">
-    <div>
-      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-      <i class="iconfont icon-love"></i>
-      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
-        <span>Fluid</span></a>
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">标签云</h3>
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">C语言</a> <a href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">电子电路基础</a>
     </div>
     
-
-    
-
-    
   </div>
-</footer>
 
-<!-- SCRIPTS -->
-<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
-<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
-<script  src="/js/debouncer.js" ></script>
-<script  src="/js/main.js" ></script>
-
-<!-- Plugins -->
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li></ul>
+    </div>
+  </div>
 
 
   
-    <script  src="/js/lazyload.js" ></script>
-  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Oddyti
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/Elec/0001.html">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
+                    <img data-src="/img/back1.jpg" data-sizes="auto" alt="二极管" class="lazyload">
+                    <h1>二极管</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>388 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <h1 id="二极管"><a href="#二极管" class="headerlink" title="二极管"></a>二极管</h1><h2 id="PN结"><a href="#PN结" class="headerlink" title="PN结"></a>PN结</h2><h3 id="一、PN结的形成"><a href="#一、PN结的形成" class="headerlink" title="一、PN结的形成"></a>一、PN结的形成</h3><ol>
+<li>扩散运动（多子）</li>
+<li>空间电荷区：耗尽层、阻挡层、PN结</li>
+<li>漂移运动（少子）</li>
+<li>空间电荷区：阻碍多子扩散、加快少子扩散<h3 id="二、PN结的特性：单向导电性"><a href="#二、PN结的特性：单向导电性" class="headerlink" title="二、PN结的特性：单向导电性"></a>二、PN结的特性：单向导电性</h3></li>
+</ol>
+<ul>
+<li>外加正向电压等于增强扩散运动</li>
+<li>外加反向电压截止，增大耗尽层（并不是没有电流，此时加强了少子运动（漂移运动），有mA级别的反向饱和电流，对温度很敏感）</li>
+<li>二极管做正向导通时候一定要加限流电阻，防止耗尽层烧掉<h3 id="三、PN结的电流方程"><a href="#三、PN结的电流方程" class="headerlink" title="三、PN结的电流方程"></a>三、PN结的电流方程</h3>$i = I_s(e^{\frac{V}{V_T}}-1)$</li>
+</ul>
+<p>$V_T = 25mV$</p>
+<h3 id="四、PN结的伏安特性"><a href="#四、PN结的伏安特性" class="headerlink" title="四、PN结的伏安特性"></a>四、PN结的伏安特性</h3><p>$i = I_s(e^{\frac{V}{V_T}}-1)$</p>
+<ul>
+<li>正向指数关系</li>
+<li>反向饱和电流：$I_s$</li>
+<li>反向击穿<ul>
+<li>雪崩击穿</li>
+<li>齐纳击穿</li>
+</ul>
+</li>
+</ul>
+<h2 id="二极管的主要参数"><a href="#二极管的主要参数" class="headerlink" title="二极管的主要参数"></a>二极管的主要参数</h2><ul>
+<li>$I_F$ 最大整流电流</li>
+<li>$V_R$ 最大反向工作电压，一般是反向击穿电压的一半（余度，保证补击穿）</li>
+<li>$I_R$ 未击穿时候，反向电流</li>
+<li>$f_M$ 最高工作频率，因为PN结有电容效应，频率高时，PN近似导通的容抗，单向导电性被破坏。高频电路要注意。</li>
+</ul>
+<h2 id="二极管的等效电路"><a href="#二极管的等效电路" class="headerlink" title="二极管的等效电路"></a>二极管的等效电路</h2><ul>
+<li>伏安特性折线化</li>
+<li><img data-sizes="auto" data-src="../img/erjiguandengxiao.png" alt="alt 二极管等效模型" class="lazyload"></li>
+<li>(a)是绝对理想的二极管，舍弃掉了导通电压</li>
+<li>(b)导通电压导通后近似不变</li>
+<li>(c)</li>
+<li><img data-sizes="auto" data-src="../img/限幅电路.png" alt="alt 限幅电路" class="lazyload"></li>
+<li><img data-sizes="auto" data-src="../img/小信号.png" alt="alt 小信号" class="lazyload"></li>
+<li>小信号加直流时，直流让二极管导通，从而小信号可以通过，即让小信号在特定的点工作</li>
+<li></li>
+</ul>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/C/0001.html">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
+                    <img data-src="/img/back1.jpg" data-sizes="auto" alt="位运算" class="lazyload">
+                    <h1>位运算</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年09月10日</a>
+            <a><i class="nexmoefont icon-areachart"></i>539 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>$i_s$</p>
+<h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><h1 id="按位与-amp"><a href="#按位与-amp" class="headerlink" title="按位与 &amp;"></a>按位与 &amp;</h1><ul>
+<li>若 (x)1 == 1 且 (y)1 == 1，那么(x &amp; y)1 = 1，否则(x &amp; y)1 = 0</li>
+<li>应用<ul>
+<li>让某些位为0: x &amp; 0xFE</li>
+<li>取一个数中的某一段: x &amp; 0xFF</li>
+</ul>
+</li>
+</ul>
+<h1 id="按位或"><a href="#按位或" class="headerlink" title="按位或 |"></a>按位或 |</h1><ul>
+<li>若 (x)1 == 1 或 (y)1 == 1，那么(x | y)1 = 1，否则(x &amp; y)1 = 0</li>
+<li>应用<ul>
+<li>使得一位或几个位为1: x | 0x01 (最后一位或成1)</li>
+<li>把两个数拼起来: 0x00FF | 0xFF00 (拼成FFFF)</li>
+</ul>
+</li>
+</ul>
+<h1 id="按位取反"><a href="#按位取反" class="headerlink" title="按位取反 ~"></a>按位取反 ~</h1><ul>
+<li>(~x)i = 1 - (x)i</li>
+<li>把1位变0，0位变1</li>
+<li>想得到全部位为1的数: ~0</li>
+<li>例子<ul>
+<li>7 二进制 0111，x |7 使得低三位为1，而x &amp; ~7，就使得低三位为0</li>
+</ul>
+</li>
+</ul>
+<h1 id="逻辑运算与按位运算"><a href="#逻辑运算与按位运算" class="headerlink" title="逻辑运算与按位运算"></a>逻辑运算与按位运算</h1><ul>
+<li>对于逻辑运算，它只看到两个值：0和1，可以认为逻辑运算相当于把所有的非0值变成1，然后做按位运算</li>
+<li>如<ul>
+<li>5 &amp;&amp; 4 → 1 &amp; 1 → 1</li>
+<li>5 || 4 → 1 | 1 → 1</li>
+<li>!4 → !1 → 0</li>
+</ul>
+</li>
+</ul>
+<h1 id="按位异或"><a href="#按位异或" class="headerlink" title="按位异或 ^"></a>按位异或 ^</h1><ul>
+<li>如果(x)i == (y)i，那么(x ^ y) = 0，否则，(x^y)i == 1</li>
+<li>即两个位相等，结果为0，两个位不相等，结果为1</li>
+<li>如果x和y相等，那么(x ^ y)结果为0</li>
+<li>对于一个变量用一个值异或两次等于啥也没做 （可以用来加密）<ul>
+<li>x ^ y ^ y → x</li>
+</ul>
+</li>
+<li>相等的两个数异或结果为0</li>
+</ul>
+<h2 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h2><h1 id="左移-lt-lt"><a href="#左移-lt-lt" class="headerlink" title="左移 &lt;&lt;"></a>左移 &lt;&lt;</h1><ul>
+<li>i &lt;&lt; j 表示i中所有的位向左移动j个位置，右边填入0</li>
+<li>所有小于int的类型，移位以int的方式来做，结果是int</li>
+<li>x &lt;&lt; 1 (左移一位) 等价于 x *= 2</li>
+<li>x &lt;&lt; n (左移n位) 等价于 x *= 2^n(n次方)</li>
+</ul>
+<h1 id="右移"><a href="#右移" class="headerlink" title="右移"></a>右移</h1><ul>
+<li>i &gt;&gt; j 表示i中所有的位向右移j位</li>
+<li>所有小于int的类型，移位以int的方式来做，结果是int</li>
+<li>对于unsigned的类型，左边填入0</li>
+<li>对于signed的类型，左边填入原来的最高位（保持符号不变）</li>
+<li>x &gt;&gt; 1 (左移一位) 等价于 x /= 2</li>
+<li>x &gt;&gt; n (左移n位) 等价于 x /= 2^n(n次方)</li>
+</ul>
+<h1 id="！！移位的位数不要用负数，这是没有定义的行为！！"><a href="#！！移位的位数不要用负数，这是没有定义的行为！！" class="headerlink" title="！！移位的位数不要用负数，这是没有定义的行为！！"></a>！！移位的位数不要用负数，这是没有定义的行为！！</h1><h2 id="位运算例子"><a href="#位运算例子" class="headerlink" title="位运算例子"></a>位运算例子</h2>
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2020/09/05/hello-world/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
+                    <img data-src="/img/back1.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
+                    <h1>Hello World</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年09月05日</a>
+            <a><i class="nexmoefont icon-areachart"></i>75 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+            
+        </article>
+    </div>
+    
+</section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--<script src="/js/app.js?v=1608707581123"></script>-->
 
 
-
-  
-
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
 
 
-  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
-  <script  src="/js/clipboard-use.js" ></script>
-
-
-
-
-
-
-
-
-
-  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
-  <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "肚子的肉肉是无论如何都减不下去的&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
-  </script>
-
-
-
-
-
-  <script  src="/js/local-search.js" ></script>
-  <script>
-    var path = "/local-search.xml";
-    var inputArea = document.querySelector("#local-search-input");
-    inputArea.onclick = function () {
-      searchFunc(path, 'local-search-input', 'local-search-result');
-      this.onclick = null
-    }
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
 
@@ -514,4 +341,5 @@ Quick
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
+
 </html>
