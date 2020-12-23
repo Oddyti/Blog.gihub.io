@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>文章归档：2020/12 - 分享一份肚子</title>
+  <title>双极晶体管的结构与放大原理 - 分享一份肚子</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,17 +12,24 @@
   
 
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
-  <meta property="og:type" content="website">
-<meta property="og:title" content="分享一份肚子">
-<meta property="og:url" content="http://oddyti.cn/archives/2020/12/index.html">
+  <meta name="description" content="电子电路基础二极管学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="双极晶体管的结构与放大原理">
+<meta property="og:url" content="http://oddyti.cn/Elec/0002.html">
 <meta property="og:site_name" content="分享一份肚子">
+<meta property="og:description" content="电子电路基础二极管学习笔记">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="e:/Blog/folder/source/_posts/image-20201223173112387.png">
+<meta property="og:image" content="e:/Blog/folder/source/_posts/image-20201223175108127.png">
+<meta property="article:published_time" content="2020-12-23T09:28:00.000Z">
+<meta property="article:modified_time" content="2020-12-23T10:08:33.856Z">
 <meta property="article:author" content="Oddyti">
-<meta property="article:tag" content="keywords">
+<meta property="article:tag" content="电子电路基础">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:/Blog/folder/source/_posts/image-20201223173112387.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1608718127551">
+  <link rel="stylesheet" href="/css/style.css?v=1608718127508">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -137,27 +144,26 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <section class="nexmoe-posts">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
+          <img data-src="/img/back1.jpg" data-sizes="auto" alt="双极晶体管的结构与放大原理" class="lazyload">
+          <h1>双极晶体管的结构与放大原理</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
+    <a><i class="nexmoefont icon-areachart"></i>171 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+</div>
+
+  <div class="nexmoe-post-right">
     
-    <div class="nexmoe-post">
-        <a href="/Elec/0002.html">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
-                    <img data-src="/img/back1.jpg" data-sizes="auto" alt="双极晶体管的结构与放大原理" class="lazyload">
-                    <h1>双极晶体管的结构与放大原理</h1>
-                </div>
-            
-        </a>
+  </div>
 
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
-            <a><i class="nexmoefont icon-areachart"></i>171 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-        </div>
-
-        <article>
-            
-                <h1 id="双极晶体管-BJT-的结构与放大原理"><a href="#双极晶体管-BJT-的结构与放大原理" class="headerlink" title="双极晶体管(BJT)的结构与放大原理"></a>双极晶体管(BJT)的结构与放大原理</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p><img data-fancybox="gallery" data-sizes="auto" data-src="E:\Blog\folder\source\_posts\image-20201223173112387.png" alt="image-20201223173112387" class="lazyload"></p>
+  <article>
+    <h1 id="双极晶体管-BJT-的结构与放大原理"><a href="#双极晶体管-BJT-的结构与放大原理" class="headerlink" title="双极晶体管(BJT)的结构与放大原理"></a>双极晶体管(BJT)的结构与放大原理</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p><img data-fancybox="gallery" data-sizes="auto" data-src="E:\Blog\folder\source\_posts\image-20201223173112387.png" alt="image-20201223173112387" class="lazyload"></p>
 <p>发射emitter：发射载流子，所以参杂浓度最高</p>
 <p>基电collector: 收集载流子，参杂浓度低</p>
 <p>基极base: </p>
@@ -169,94 +175,47 @@
 <p>==条件：发射结正向偏置，集电结反偏==</p>
 <p>$I_C$这个放大电流由$V_{CC}$产生，这样的条件下</p>
 <script type="math/tex; mode=display">i_C=\beta i_B</script><h3 id="内部载流子的运动"><a href="#内部载流子的运动" class="headerlink" title="内部载流子的运动"></a>内部载流子的运动</h3>
-            
-        </article>
-    </div>
+  </article>
+
+  
     
-    <div class="nexmoe-post">
-        <a href="/Elec/0001.html">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
-                    <img data-src="/img/back1.jpg" data-sizes="auto" alt="二极管" class="lazyload">
-                    <h1>二极管</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
-            <a><i class="nexmoefont icon-areachart"></i>503 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
-        </div>
-
-        <article>
-            
-                <h1 id="二极管"><a href="#二极管" class="headerlink" title="二极管"></a>二极管</h1><h2 id="PN结"><a href="#PN结" class="headerlink" title="PN结"></a>PN结</h2><h3 id="一、PN结的形成"><a href="#一、PN结的形成" class="headerlink" title="一、PN结的形成"></a>一、PN结的形成</h3><ol>
-<li>扩散运动（多子）</li>
-<li>空间电荷区：耗尽层、阻挡层、PN结</li>
-<li>漂移运动（少子）</li>
-<li>空间电荷区：阻碍多子扩散、加快少子扩散<h3 id="二、PN结的特性：单向导电性"><a href="#二、PN结的特性：单向导电性" class="headerlink" title="二、PN结的特性：单向导电性"></a>二、PN结的特性：单向导电性</h3></li>
-</ol>
-<ul>
-<li>外加正向电压等于增强扩散运动</li>
-<li>外加反向电压截止，增大耗尽层（并不是没有电流，此时加强了少子运动（漂移运动），有mA级别的反向饱和电流，对温度很敏感）</li>
-<li>二极管做正向导通时候一定要加限流电阻，防止耗尽层烧掉<h3 id="三、PN结的电流方程"><a href="#三、PN结的电流方程" class="headerlink" title="三、PN结的电流方程"></a>三、PN结的电流方程</h3>$i = I_s(e^{\frac{V}{V_T}}-1)$</li>
-</ul>
-<p>$V_T = 25mV$</p>
-<h3 id="四、PN结的伏安特性"><a href="#四、PN结的伏安特性" class="headerlink" title="四、PN结的伏安特性"></a>四、PN结的伏安特性</h3><p>$i = I_s(e^{\frac{V}{V_T}}-1)$</p>
-<ul>
-<li>正向指数关系</li>
-<li>反向饱和电流：$I_s$</li>
-<li>反向击穿<ul>
-<li>雪崩击穿</li>
-<li>齐纳击穿</li>
-</ul>
-</li>
-</ul>
-<h2 id="二极管的主要参数"><a href="#二极管的主要参数" class="headerlink" title="二极管的主要参数"></a>二极管的主要参数</h2><ul>
-<li>$I_F$ 最大整流电流</li>
-<li>$V_R$ 最大反向工作电压，一般是反向击穿电压的一半（余度，保证补击穿）</li>
-<li>$I_R$ 未击穿时候，反向电流</li>
-<li>$f_M$ 最高工作频率，因为PN结有电容效应，频率高时，PN近似导通的容抗，单向导电性被破坏。高频电路要注意。</li>
-</ul>
-<h2 id="二极管的等效电路"><a href="#二极管的等效电路" class="headerlink" title="二极管的等效电路"></a>二极管的等效电路</h2><ul>
-<li><p>伏安特性折线化</p>
-</li>
-<li><p><img data-fancybox="gallery" data-sizes="auto" data-src="../img/erjiguandengxiao.png" alt="alt 二极管等效模型" class="lazyload"></p>
-</li>
-<li><p>(a)是绝对理想的二极管，舍弃掉了导通电压</p>
-</li>
-<li><p>(b)导通电压导通后近似不变</p>
-</li>
-<li><p>(c)</p>
-</li>
-<li><p><img data-fancybox="gallery" data-sizes="auto" data-src="../img/限幅电路.png" alt="alt 限幅电路" class="lazyload"></p>
-</li>
-<li><p><img data-fancybox="gallery" data-sizes="auto" data-src="../img/小信号.png" alt="alt 小信号" class="lazyload"></p>
-</li>
-<li><p>小信号加直流时，直流让二极管导通，从而小信号可以通过，即让小信号在特定的点工作</p>
-<h1 id="二极管的微变等效和稳压二极管"><a href="#二极管的微变等效和稳压二极管" class="headerlink" title="二极管的微变等效和稳压二极管"></a>二极管的微变等效和稳压二极管</h1><h2 id="微变等效"><a href="#微变等效" class="headerlink" title="微变等效"></a>微变等效</h2><script type="math/tex; mode=display">r_d = \frac{V_T}{I_D}</script><p>其中$I_D$为静态电流</p>
-<p>所以同一个二极管在不同的静态工作情况下工作对应的动态电阻不同。</p>
-<p>即二极管微变等效分析：</p>
-<blockquote>
-<ol>
-<li>寻找直流（静态工作，去掉交流）的$I_D$</li>
-<li>求出$r_d$</li>
-<li>等效为$r_d$，去掉直流，求出$i_d$</li>
-<li>总电流$i_D = i_d + I_D$</li>
-</ol>
-</blockquote>
-<p><img data-fancybox="gallery" data-sizes="auto" data-src="E:\Blog\folder\source\_posts\image-20201223172347231.png" alt="image-20201223172347231" class="lazyload"></p>
-</li>
-</ul>
-<h2 id="稳压二极管"><a href="#稳压二极管" class="headerlink" title="稳压二极管"></a>稳压二极管</h2><p>暂缺</p>
-
-            
-        </article>
-    </div>
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>Oddyti<br>
+    <strong>本文链接：</strong><a href="http://oddyti.cn/Elec/0002.html" title="http:&#x2F;&#x2F;oddyti.cn&#x2F;Elec&#x2F;0002.html" target="_blank" rel="noopener">http:&#x2F;&#x2F;oddyti.cn&#x2F;Elec&#x2F;0002.html</a><br>
     
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+    
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" rel="tag">电子电路基础</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
 </section>
-
+  </div>
+</div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
@@ -269,7 +228,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1608718127554"></script>
+ <script src="/js/app.js?v=1608718127514"></script>
 
   
 

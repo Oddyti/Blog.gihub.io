@@ -11,7 +11,7 @@
   
   
 
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
   <meta name="description" content="$i_s$ 位运算按位与 &amp; 若 (x)1 &#x3D;&#x3D; 1 且 (y)1 &#x3D;&#x3D; 1，那么(x &amp; y)1 &#x3D; 1，否则(x &amp; y)1 &#x3D; 0 应用 让某些位为0: x &amp; 0xFE 取一个数中的某一段: x &amp; 0xFF    按位或 | 若 (x)1 &#x3D;&#x3D; 1 或 (y)1 &#x3D;&#x3D; 1，那么(x | y)1 &#x3D; 1，否则(x &amp; y)1 &#x3D; 0 应用 使">
 <meta property="og:type" content="article">
 <meta property="og:title" content="位运算">
@@ -20,15 +20,13 @@
 <meta property="og:description" content="$i_s$ 位运算按位与 &amp; 若 (x)1 &#x3D;&#x3D; 1 且 (y)1 &#x3D;&#x3D; 1，那么(x &amp; y)1 &#x3D; 1，否则(x &amp; y)1 &#x3D; 0 应用 让某些位为0: x &amp; 0xFE 取一个数中的某一段: x &amp; 0xFF    按位或 | 若 (x)1 &#x3D;&#x3D; 1 或 (y)1 &#x3D;&#x3D; 1，那么(x | y)1 &#x3D; 1，否则(x &amp; y)1 &#x3D; 0 应用 使">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-10T00:05:00.000Z">
-<meta property="article:modified_time" content="2020-12-23T06:46:34.684Z">
+<meta property="article:modified_time" content="2020-12-23T07:41:06.287Z">
 <meta property="article:author" content="Oddyti">
 <meta property="article:tag" content="C语言">
 <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1608708115200">-->
-
-  
+  <link rel="stylesheet" href="/css/style.css?v=1608718127520">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -52,7 +50,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>4</div>
+        <div><span>文章</span>5</div>
         <div><span>标签</span>2</div>
         <div><span>分类</span>0</div>
     </div>
@@ -91,9 +89,12 @@
 </div>
   
   <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">社交按钮</h3>
     <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://github.com/Oddyti/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+        <a class="mdui-ripple" href="https://jq.qq.com/?_wv=1027&k=5CfKHun" target="_blank" mdui-tooltip="{content: 'QQ群'}" style="color: rgb(249, 174, 8);background-color: rgba(249, 174, 8, .1);">
+            <i class="nexmoefont icon-QQ"></i>
+        </a><a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
             <i class="nexmoefont icon-github"></i>
         </a>
     </div>
@@ -104,9 +105,8 @@
   
   
   <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">标签云</h3>
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">C语言</a> <a href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">电子电路基础</a>
+      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 10px;">C语言</a> <a href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" style="font-size: 20px;">电子电路基础</a>
     </div>
     
   </div>
@@ -116,17 +116,26 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">七月 2013</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
+
+<style>
+.nexmoe-widget .archive-list-count{
+	position : absolute;
+	right: 15px;
+	top:9px;
+	color: #DDD;
+}
+</style>
 
   
 </aside>
     <div class="nexmoe-copyright">
         &copy; 2020 Oddyti
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
     </div>
 </div><!-- .nexmoe-drawer -->
   </div>
@@ -142,7 +151,7 @@
   
   <div class="nexmoe-post-meta nexmoe-rainbow" style="margin:10px 0!important;">
     <a><i class="nexmoefont icon-calendar-fill"></i>2020年09月10日</a>
-    <a><i class="nexmoefont icon-areachart"></i>539 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>515 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
 </div>
 
@@ -213,16 +222,8 @@
 <h1 id="！！移位的位数不要用负数，这是没有定义的行为！！"><a href="#！！移位的位数不要用负数，这是没有定义的行为！！" class="headerlink" title="！！移位的位数不要用负数，这是没有定义的行为！！"></a>！！移位的位数不要用负数，这是没有定义的行为！！</h1><h2 id="位运算例子"><a href="#位运算例子" class="headerlink" title="位运算例子"></a>位运算例子</h2>
   </article>
 
-  <div class="nexmoe-post-meta nexmoe-rainbow">
+  
     
-    
-        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a>
-    
-</div>
-
-  <div class="nexmoe-post-footer">
-    
-      
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>Oddyti<br>
     <strong>本文链接：</strong><a href="http://oddyti.cn/C/0001.html" title="http:&#x2F;&#x2F;oddyti.cn&#x2F;C&#x2F;0001.html" target="_blank" rel="noopener">http:&#x2F;&#x2F;oddyti.cn&#x2F;C&#x2F;0001.html</a><br>
@@ -232,7 +233,16 @@
   </div>
 
 
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
     
+    
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/C%E8%AF%AD%E8%A8%80/" rel="tag">C语言</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
     <section class="nexmoe-comment">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
 <div id="gitalk"></div>
@@ -253,14 +263,17 @@
 </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1608708115204"></script>-->
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js?v=1"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
-
-
+<script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+ <script src="/js/app.js?v=1608718127524"></script>
 
   
 
