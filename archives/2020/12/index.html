@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?v=233" crossorigin>
   
-  <link rel="stylesheet" href="/css/style.css?v=1608737322665">
+  <link rel="stylesheet" href="/css/style.css?v=1610246337885">
 <meta name="generator" content="Hexo 5.1.1"></head>
 
 <body class="mdui-drawer-body-left">
@@ -46,7 +46,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>5</div>
+        <div><span>文章</span>6</div>
         <div><span>标签</span>2</div>
         <div><span>分类</span>0</div>
     </div>
@@ -112,7 +112,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/">2013</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -129,7 +129,7 @@
   
 </aside>
     <div class="nexmoe-copyright">
-        &copy; 2020 Oddyti
+        &copy; 2021 Oddyti
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
     </div>
@@ -151,7 +151,7 @@
 
         <div class="nexmoe-post-meta nexmoe-rainbow">
             <a><i class="nexmoefont icon-calendar-fill"></i>2020年12月23日</a>
-            <a><i class="nexmoefont icon-areachart"></i>448 字</a>
+            <a><i class="nexmoefont icon-areachart"></i>628 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
         </div>
 
@@ -186,7 +186,28 @@
 <p>==共用哪个极，就是另外两个极的电流之比==</p>
 </li>
 </ol>
-
+<h3 id="1-3-3-BJT共射放特性曲线"><a href="#1-3-3-BJT共射放特性曲线" class="headerlink" title="1.3.3 BJT共射放特性曲线"></a>1.3.3 BJT共射放特性曲线</h3><h4 id="输入特性"><a href="#输入特性" class="headerlink" title="输入特性"></a>输入特性</h4><p>即研究$i_b = f(V_{BE})|_{V_{CE} = 常数}$的关系</p>
+<p><img src="E:\Blog\folder\source\_posts\001.png" style="zoom:50%;" /></p>
+<p>特点：</p>
+<blockquote>
+<p>$V_{CE}$越小，往左移；$V_{CE}&gt;1$几乎不动。</p>
+</blockquote>
+<p>说明：</p>
+<blockquote>
+<p>$i_B$受$v_{BE}$控制</p>
+</blockquote>
+<h4 id="输出特性"><a href="#输出特性" class="headerlink" title="输出特性"></a>输出特性</h4><p>即研究$i_c = f(v_{CE})|_{i_B = 常数}$的关系</p>
+<p><img src="E:\Blog\folder\source\_posts\003.png" style="zoom:50%;" /></p>
+<p>当$v_{CE}$大于某个值，集电结反偏，$i_C$不变，和$i_B$成固定比例，放大状态。</p>
+<p>饱和区两者不成比例，也即是说$i_B$不受$i_C$控制。 </p>
+<blockquote>
+<ol>
+<li>放大区：发射结正偏，集电结反偏，$i_B$、$i_C$成比例</li>
+<li>截止区：双结反偏，CE断路</li>
+<li>饱和区：双结正偏，即$\beta I_B &gt; I_{Cmax}$</li>
+</ol>
+</blockquote>
+<h3 id="1-3-4-三极管的主要参数"><a href="#1-3-4-三极管的主要参数" class="headerlink" title="1.3.4 三极管的主要参数"></a>1.3.4 三极管的主要参数</h3><h3 id="1-3-5-温度的影响"><a href="#1-3-5-温度的影响" class="headerlink" title="1.3.5 温度的影响"></a>1.3.5 温度的影响</h3>
             
         </article>
     </div>
@@ -287,7 +308,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
- <script src="/js/app.js?v=1608737322668"></script>
+ <script src="/js/app.js?v=1610246337888"></script>
 
   
 
@@ -309,7 +330,8 @@
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 
 </html>
