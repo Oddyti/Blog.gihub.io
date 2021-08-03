@@ -5,10 +5,6 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="noindex,follow">
-      
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -26,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>分享一份独自</title>
+  <title>互联网的运作学习笔记 - 分享一份独自</title>
+  
+    <meta name="keywords" content="前端学习">
   
 
+  
+    <meta name="description" content="前端学习笔记——互联网">
   
 
   <!-- feed -->
@@ -359,7 +359,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  search' style="display: none;">
+        <div id="full" class='cover-wrapper 互联网的运作学习笔记 search' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/Oddyti/Resources@main/img/cover1.png"></div>
           
@@ -443,383 +443,154 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow floatable article-type-互联网的运作学习笔记" id="互联网的运作学习笔记" itemscope itemprop="blogPost">
   
-  <section class="post-list">
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
+    
+      <h1 class="title">
+        互联网的运作学习笔记
+      </h1>
+      <div class='new-meta-box'>
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Prob/0001.html">
-        概率论统计总结
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>概率论与数理统计总结笔记</p>
-    
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-01-15</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月3日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="互联网的运作学习笔记" data-path="/front-end/0001.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p>前端学习笔记——互联网<br><a id="more"></a></p>
+<h1 id="互联网是如何运作的？"><a href="#互联网是如何运作的？" class="headerlink" title="互联网是如何运作的？"></a>互联网是如何运作的？</h1><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p><strong>URL统一资源定位符（Uniform Resource Locator）</strong>：一个给定的资源在Web上的地址，每个有效的URL指向一个唯一的资源（如HTML网页、CSS文档、图片、视频等等）</p>
+<h3 id="URL的组成"><a href="#URL的组成" class="headerlink" title="URL的组成"></a>URL的组成</h3><p>以</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.example.com:80/path/to/myfile.html?key1=value1&amp;key2=value2#SomewhereInTheDocument">http://www.example.com:80/path/to/myfile.html?key1=value1&amp;key2=value2#SomewhereInTheDocument</a></p>
+</blockquote>
+<p>为例：</p>
+<p><code>http</code> 是协议（Protocol）。其他的有HTTPS、mailto（打开邮件客户端）、ftp（处理文件传输）等。</p>
+<p><code>www.example.com</code> 是域名（Domain Name）。</p>
+<p><code>:80</code> 是端口（Port）。它表示用于访问Web服务器上的资源的技术“门”。如果Web服务器使用HTTP协议的标准端口（HTTP为80，HTTPS为443）来授予其资源的访问权限，则通常会被忽略。否则是强制性的。</p>
+<p><code>/path/to/myfile.html</code> 是网络服务器上资源的路径。</p>
+<p><code>?key1=value1&amp;key2=value2</code> 是提供给网络服务器的额外参数。 参数由<code>&amp;</code>分隔开。每个服务器有自己的参数规则。</p>
+<p><code>#SomewhereInTheDocument</code> 是资源本身的另一部分的锚点。例如，在HTML文档上，浏览器将滚动到定义锚点的位置；在视频或音频文档上，浏览器将尝试转到锚代表的时间。</p>
+<p><strong>打个比方</strong>：协议代表你要使用的邮政服务，域名是城市或者城镇，端口则像邮政编码；路径代表着你的信件所有递送的大楼；参数则提供额外的信息，如大楼所在单元；最后，锚点表示信件的收件人。</p>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><h2 id="网络服务器"><a href="#网络服务器" class="headerlink" title="网络服务器"></a>网络服务器</h2><p>静态网络服务器（<strong>static web server</strong>）：由一个计算机（硬件）和一个 HTTP 服务器（软件）组成。 <strong>“静态”</strong> 是因为这个服务器把它托管文件的 <strong>“保持原样”</strong> 地传送到你的浏览器。</p>
+<p>动态网络服务器（<strong>dynamic web server</strong>）： 静态网络服务器+额外的软件（如应用服务器、数据库）。<strong>“动态”</strong>：通过HTTP传输到用户浏览器之前会对托管的文件进行更新。</p>
+<p><strong>通俗讲</strong>：</p>
+<ul>
+<li>“静态” 意味着 “保持原样地提供”。</li>
+<li><p>“动态” 意味着服务器会处理内容甚至实时地从一个数据库中产生它。</p>
+</li>
+<li><p>静态网络服务器就是所有的网页已经做好了固定了，用户访问时直接 “保持原样” 地传送到用户浏览器。而动态网络服务器，可以是<strong>静态的网络服务器 + 应用服务器 + 数据库</strong>组成，用户访问的时，<strong>应用服务器</strong>从<strong>数据库</strong>调用不同的数据（<strong>动态更新</strong>）去填充一个HTML模板，这样的设置可以更快更简单地维护以及分发内容。</p>
+</li>
+</ul>
+<h2 id="HTTP（超文本传输协议）"><a href="#HTTP（超文本传输协议）" class="headerlink" title="HTTP（超文本传输协议）"></a>HTTP（超文本传输协议）</h2><p>特点：</p>
+<ul>
+<li>只有<em>用户</em>可以制定 HTTP 请求，然后只会发送到<em>服务器</em>。服务器只能响应客户端的HTTP请求。</li>
+<li>当通过 HTTP 请求一个文件时，客户必须提供这个文件的<em>URL</em>。</li>
+<li>网络服务器<em>必须应答</em>每一个 HTTP 请求，至少也要回复一个错误信息。</li>
+</ul>
+<h2 id="超链接（Hpyerlink）"><a href="#超链接（Hpyerlink）" class="headerlink" title="超链接（Hpyerlink）"></a>超链接（Hpyerlink）</h2><p>用户可以通过URL来访问需要的文档，但是难通过输入一个长URL来访问一个文档。所以<strong>超链接</strong>可以将任何文本与URL相关联，因此用户只要激活链接就可以到达目标文档。</p>
+<h3 id="链接的类型"><a href="#链接的类型" class="headerlink" title="链接的类型"></a>链接的类型</h3><ul>
+<li><p>内链</p>
+<p>内链是您的网页之间的链接。</p>
+</li>
+<li><p>外链</p>
+<p>外链是从您的网页链接到其他人的网页的链接。</p>
+</li>
+<li><p>传入链接</p>
+<p>传入链接是从其他人的网页链接到您的网页的链接。</p>
+</li>
+</ul>
+<h3 id="锚（anchor）"><a href="#锚（anchor）" class="headerlink" title="锚（anchor）"></a>锚（anchor）</h3><p><strong>链接</strong>是将网页与网页相连，<strong>锚</strong>是将一个网页中的两个段落相连。</p>
+
+  
+  
+  
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/Prob/0001.html'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/music.html'>
+          <p class='title'>每日歌曲推荐<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>最近歌慌了，好不容易遇到一首对上耳朵的歌就会翻来覆去听，想到自己以前也听了不少的歌，所以萌生了一个暑假每天推荐一首歌计划，加一点自己的感受和歌手介绍。希望能让同样歌慌的人遇到对上耳朵的歌。
+00...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow floatable" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0006.html">
-        基本放大电路总结
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>基本放大电路总结。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-01-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0006.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0005.html">
-        多级放大电路
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>模拟电子电路基础，多级放大电路笔记。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-01-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0005.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0004.html">
-        基本放大电路的构成
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>模拟电子电路基础，基本放大电路的构成笔记。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-01-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0004.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0003.html">
-        场效应管
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>模拟电子电路基础，场效应晶体管笔记。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-01-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0003.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0002.html">
-        双极晶体管的结构与放大原理
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>电子电路基础三极管学习笔记</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0002.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/Elec/0001.html">
-        二极管
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>电子电路基础二极管学习笔记</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-12-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/Elec/0001.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/C/0001.html">
-        位运算
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>C语言位运算笔记</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-09-10</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/C/0001.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/">
-            <section class="post prev white-box shadow floatable" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
-  
 
 
 </div>
@@ -829,142 +600,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow floatable desktop mobile">
-  <div class='content'>
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">分享一份独自</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow floatable desktop">
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%AC%94%E8%AE%B0/" href="/categories/%E7%AC%94%E8%AE%B0/"
-            id="categoriesE7AC94E8AEB0"
-            ><div class='name'>笔记</div><div class='badge'>(12)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E8%AE%B0/" href="/categories/%E9%9A%8F%E8%AE%B0/"
-            id="categoriesE99A8FE8AEB0"
-            ><div class='name'>随记</div><div class='badge'>(5)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#URL%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">URL的组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D"><span class="toc-text">域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">网络服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%EF%BC%88%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%89"><span class="toc-text">HTTP（超文本传输协议）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%EF%BC%88Hpyerlink%EF%BC%89"><span class="toc-text">超链接（Hpyerlink）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">链接的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9A%EF%BC%88anchor%EF%BC%89"><span class="toc-text">锚（anchor）</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow floatable desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/C%E8%AF%AD%E8%A8%80/" style="font-size: 14px; color: #999">C语言</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">前端学习</a> <a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E7%BB%9F%E8%AE%A1/" style="font-size: 14px; color: #999">概率论与统计</a> <a href="/tags/%E7%94%B5%E5%AD%90%E7%94%B5%E8%B7%AF%E5%9F%BA%E7%A1%80/" style="font-size: 24px; color: #555">电子电路基础</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 17.33px; color: #828282">英语</a> <a href="/tags/%E9%80%9A%E8%AF%86%E8%AF%BE/" style="font-size: 14px; color: #999">通识课</a> <a href="/tags/%E9%9A%8F%E8%AE%B0/" style="font-size: 20.67px; color: #6c6c6c">随记</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow floatable desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
