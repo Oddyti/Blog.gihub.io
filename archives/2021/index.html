@@ -589,6 +589,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/thoughts/0003.html">
+        <img class='headimg' src='https://cdn.jsdelivr.net/gh/Oddyti/Resources@main/img/远望.png'/>
+      </a>
+    </div>
+  
   
     
     <h2 class="article-title" >
@@ -599,9 +605,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md'>
     
-      
-        
-      
+      <p>高中某个假期，乘车回平武。从天亮到天黑，延山路前行。</p>
     
   </div>
   
@@ -2276,5 +2280,21 @@ document.addEventListener("pjax:success", listennSidebarTOC);
  
 	  
     </div>
-  </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
 </html>

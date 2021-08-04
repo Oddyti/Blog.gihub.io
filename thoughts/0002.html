@@ -669,7 +669,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/thoughts/0003.html'>
           <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>远望</p>
-          <p class='content'></p>
+          <p class='content'>高中某个假期，乘车回平武。从天亮到天黑，延山路前行。
+
+手机的屏幕刺出的光映在车窗上，又反射进眼里，在静谧的夜中显得格外刺眼。关掉手机，望向车外，本以为是会让人迷失距离的黑，可映入眼帘的却是满月...</p>
         </a>
       
       
@@ -1928,5 +1930,21 @@ document.addEventListener("pjax:success", listennSidebarTOC);
  
 	  
     </div>
-  </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
 </html>
