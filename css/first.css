@@ -1741,7 +1741,7 @@ ul.list-v >li>a:hover {
   }
   :root:not([data-user-color-scheme]) {
     --color-site-body: #000;
-    --color-site-bg: #222;
+    --color-site-bg: #0b0b0b;
     --color-site-inner: #eee;
     --color-site-footer: #aaa;
     --color-card: #333;
@@ -1756,7 +1756,7 @@ ul.list-v >li>a:hover {
     --color-h5: #ddd;
     --color-h6: #ddd;
     --color-p: #bbb;
-    --color-list: #aaa;
+    --color-list: #bbb;
     --color-list-hl: #626c7e;
     --color-meta: #888;
     --color-link: #888;
@@ -1892,7 +1892,7 @@ ul.list-v >li>a:hover {
 }
 [data-user-color-scheme='dark'] {
   --color-site-body: #000;
-  --color-site-bg: #222;
+  --color-site-bg: #0b0b0b;
   --color-site-inner: #eee;
   --color-site-footer: #aaa;
   --color-card: #333;
@@ -1907,7 +1907,7 @@ ul.list-v >li>a:hover {
   --color-h5: #ddd;
   --color-h6: #ddd;
   --color-p: #bbb;
-  --color-list: #aaa;
+  --color-list: #bbb;
   --color-list-hl: #626c7e;
   --color-meta: #888;
   --color-link: #888;
