@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>CSS心得</title>
+      <link href="//front-end/0002.html"/>
+      <url>//front-end/0002.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer@latest/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting@1/dist/Meting.min.js"></script><p>学习CSS的一些心得<br><a id="more"></a></p><ul><li>类名（class）不能以数字开头</li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+          <category> 前端学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>latex问题记录</title>
       <link href="//latex/0001.html"/>
       <url>//latex/0001.html</url>
