@@ -551,7 +551,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><code>?key1=value1&amp;key2=value2</code> 是提供给网络服务器的额外参数。 参数由<code>&amp;</code>分隔开。每个服务器有自己的参数规则。</p>
 <p><code>#SomewhereInTheDocument</code> 是资源本身的另一部分的锚点。例如，在HTML文档上，浏览器将滚动到定义锚点的位置；在视频或音频文档上，浏览器将尝试转到锚代表的时间。</p>
 <p><strong>打个比方</strong>：协议代表你要使用的邮政服务，域名是城市或者城镇，端口则像邮政编码；路径代表着你的信件所有递送的大楼；参数则提供额外的信息，如大楼所在单元；最后，锚点表示信件的收件人。</p>
-<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><h2 id="网络服务器"><a href="#网络服务器" class="headerlink" title="网络服务器"></a>网络服务器</h2><p>静态网络服务器（<strong>static web server</strong>）：由一个计算机（硬件）和一个 HTTP 服务器（软件）组成。 <strong>“静态”</strong> 是因为这个服务器把它托管文件的 <strong>“保持原样”</strong> 地传送到你的浏览器。</p>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><p>由于IP地址太难记而且可能随时改变，所以使用域名作为地址，并且与IP地址绑定。</p>
+<h3 id="域名结构"><a href="#域名结构" class="headerlink" title="域名结构"></a>域名结构</h3><p><img src="https://cdn.jsdelivr.net/gh/Oddyti/Resources@main/img/structure.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/Oddyti/Resources@main/img/structure.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="structure"></p>
+<ul>
+<li>TLD（Top-Level Domain，顶级域名）:域名所提供的服务类型</li>
+</ul>
+<h3 id="DNS工作"><a href="#DNS工作" class="headerlink" title="DNS工作"></a>DNS工作</h3><ol>
+<li>在你的浏览器地址栏输入<code>mozilla.org</code>。</li>
+<li>您的浏览器询问您的计算机是否已经识别此域名所确定的IP地址（使用本地DNS缓存）。 如果是的话，这个域名被转换为IP地址，然后浏览器与网络服务器交换内容。结束。</li>
+<li>如果你的电脑不知道 <code>mozilla.org</code> 域名背后的IP, 它会询问一个DNS服务器，这个服务器的工作就是告诉你的电脑已经注册的域名所匹配的IP。</li>
+<li>现在电脑知道了要请求的IP地址，你的浏览器能够与网络服务器交换内容。</li>
+</ol>
+<h2 id="网络服务器"><a href="#网络服务器" class="headerlink" title="网络服务器"></a>网络服务器</h2><p>静态网络服务器（<strong>static web server</strong>）：由一个计算机（硬件）和一个 HTTP 服务器（软件）组成。 <strong>“静态”</strong> 是因为这个服务器把它托管文件的 <strong>“保持原样”</strong> 地传送到你的浏览器。</p>
 <p>动态网络服务器（<strong>dynamic web server</strong>）： 静态网络服务器+额外的软件（如应用服务器、数据库）。<strong>“动态”</strong>：通过HTTP传输到用户浏览器之前会对托管的文件进行更新。</p>
 <p><strong>通俗讲</strong>：</p>
 <ul>
@@ -723,7 +734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#URL%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">URL的组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D"><span class="toc-text">域名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">网络服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%EF%BC%88%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%89"><span class="toc-text">HTTP（超文本传输协议）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%EF%BC%88Hpyerlink%EF%BC%89"><span class="toc-text">超链接（Hpyerlink）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">链接的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9A%EF%BC%88anchor%EF%BC%89"><span class="toc-text">锚（anchor）</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#URL%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">URL的组成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D"><span class="toc-text">域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%84"><span class="toc-text">域名结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DNS%E5%B7%A5%E4%BD%9C"><span class="toc-text">DNS工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">网络服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%EF%BC%88%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%EF%BC%89"><span class="toc-text">HTTP（超文本传输协议）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B6%85%E9%93%BE%E6%8E%A5%EF%BC%88Hpyerlink%EF%BC%89"><span class="toc-text">超链接（Hpyerlink）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E7%9A%84%E7%B1%BB%E5%9E%8B"><span class="toc-text">链接的类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9A%EF%BC%88anchor%EF%BC%89"><span class="toc-text">锚（anchor）</span></a></li></ol></li></ol>
     </div>
   </section>
 
