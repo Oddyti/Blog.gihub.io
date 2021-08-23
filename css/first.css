@@ -941,9 +941,56 @@ th {
   font-family: "PingFang SC";
 }
 .l_header #wrapper .nav-main .title img {
+  animation-name: fanzhuan;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
   height: 64px;
   float: left;
   padding: 10px 8px;
+}
+@-moz-keyframes fanzhuan {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes fanzhuan {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+@-o-keyframes fanzhuan {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+@keyframes fanzhuan {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
 }
 .l_header .nav-sub {
   max-width: 1200px;
