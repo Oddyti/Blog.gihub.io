@@ -1282,6 +1282,9 @@ ul.list-v >li>a:hover {
   display: block;
   padding: 0 8px;
 }
+.l_header .menu >ul>li>a:hover {
+  transform: scale(1.03);
+}
 .l_header .menu >ul>li>a >i {
   margin-right: 4px;
 }
