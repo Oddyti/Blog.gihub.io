@@ -493,7 +493,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md'>
     
-      <p>最近歌慌了，好不容易遇到一首对上耳朵的歌就会翻来覆去听，想到自己以前也听了不少的歌，所以萌生了一个暑假每天推荐一首歌计划，加一点自己的感受和歌手介绍。希望能让同样歌慌的人遇到对上耳朵的歌。<br>
+      <p>最近歌慌了，好不容易遇到一首对上耳朵的歌就会翻来覆去听，想到自己以前也听了不少的歌，所以萌生了一个暑假每天推荐一首歌计划，加一点自己的感受和歌手介绍。希望能让同样歌慌的人遇到对上耳朵的歌。</p>
     
   </div>
   
@@ -1932,5 +1932,21 @@ document.addEventListener("pjax:success", listennSidebarTOC);
  
 	  
     </div>
-  </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</body>
 </html>
